@@ -1,0 +1,392 @@
+@import url(https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap);
+body main div section h2, body main blockquote section aside p, body main aside section p, body main article section h2, body main figure h1 {
+  margin: 1.5rem;
+  text-align: center;
+  color: #ffc600;
+  background: black;
+  padding: 0.5rem; }
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+/* Nav o menu, y general*/
+body {
+  background-image: url("../img/fondof.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-size: 1rem;
+  font-family: "Unbounded", cursive; }
+  body header nav {
+    display: flex;
+    background: white;
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center; }
+    body header nav ul {
+      margin-top: 1rem; }
+      body header nav ul li {
+        display: inline-block;
+        line-height: 5rem; }
+        body header nav ul li a {
+          color: black;
+          font-size: 1.1rem;
+          padding: 0.8rem;
+          border-radius: 0.2rem;
+          text-transform: uppercase;
+          text-decoration: none; }
+        body header nav ul li a.active, body header nav ul li a:hover {
+          background: #ffc600;
+          transition: .5s; }
+    body header nav .checkbtn {
+      margin-right: 2.5rem;
+      cursor: pointer;
+      display: none; }
+    body header nav #check {
+      display: none; }
+  body div .arriba {
+    background-color: #00AAE4;
+    margin-left: 2rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    overflow: hidden;
+    transition: 0.2s; }
+    body div .arriba span {
+      position: absolute;
+      display: block; }
+    body div .arriba #span1 {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 0.3rem;
+      background: linear-gradient(90deg, transparent, #ffc600); }
+    body div .arriba #span2 {
+      top: -100%;
+      right: 0;
+      width: 0.2rem;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #ffc600); }
+    body div .arriba #span3 {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 0.1rem;
+      background: linear-gradient(270deg, transparent, #ffc600); }
+    body div .arriba #span4 {
+      bottom: -100%;
+      left: 0;
+      width: 0.05rem;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #ffc600); }
+  body div .arriba:hover {
+    background: #ffc600;
+    box-shadow: 0 0 10px #ffc600, 0 0 40px #ffc600, 0 0 80px #ffc600;
+    transition-delay: 1s; }
+  body div .arriba:hover #span1 {
+    left: 100%;
+    transition: 1s; }
+  body div .arriba:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s; }
+  body div .arriba:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s; }
+  body div .arriba:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s; }
+  body footer {
+    background-image: url("../img/cesped.jpg");
+    padding: 2rem 0; }
+    body footer div {
+      display: flex;
+      justify-content: space-around; }
+    body footer a img {
+      height: auto;
+      width: 50px; }
+
+/*Pagina Index*/
+body main div {
+  text-align: center; }
+  body main div section h2 {
+    font-size: 2rem; }
+  body main div section article {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 30px; }
+    body main div section article img {
+      width: 90%; }
+  body main div section div figure {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6rem 0; }
+    body main div section div figure div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      body main div section div figure div p {
+        margin-bottom: 20px;
+        margin-top: 20px; }
+    body main div section div figure img {
+      width: 50%;
+      height: 50%;
+      border-radius: 60%; }
+  body main div section div div {
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden; }
+    body main div section div div div :hover {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1.1);
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    body main div section div div article :hover {
+      -webkit-transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+      transform: rotateY(180deg);
+      transform-style: preserve-3d; }
+    body main div section div div img {
+      width: 40%;
+      height: auto; }
+
+body main iframe {
+  width: 70%; }
+
+fieldset {
+  border: 5px solid black;
+  padding: 20px 0px 20px 10%;
+  margin: 2rem; }
+
+/*Pagina Copa America*/
+body main blockquote section aside {
+  text-align: center; }
+  body main blockquote section aside p {
+    font-size: 1.5rem; }
+  body main blockquote section aside img {
+    width: 70%; }
+
+body main blockquote section article {
+  margin: 2rem; }
+
+body main blockquote section div {
+  text-align: center; }
+
+/*Pagina de Finalisima*/
+body main aside section p {
+  font-size: 1.5rem; }
+
+body main aside section div {
+  text-align: center; }
+  body main aside section div img {
+    width: 80%;
+    margin: 1rem 0; }
+
+body main aside section .pajarito {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+body figure {
+  text-align: center; }
+  body figure .fin2 {
+    width: 50%;
+    height: auto;
+    margin: 2rem; }
+
+/*Pagina del Mundial*/
+body main article section h2 {
+  font-size: 1.5rem; }
+
+body main article section div {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-template-areas: "for1 res1"  "for2 res2"  "for3 res3"  "for4 res4"  "for5 res5"  "for6 res6"  "for7 res7"; }
+  body main article section div .formaciones {
+    margin: 2rem; }
+  body main article section div img {
+    width: 75%;
+    height: auto;
+    transition: all;
+    -webkit-transition: all .5s ease-in-out; }
+  body main article section div :hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px blue;
+    -webkit-box-shadow: 0px 0px 15px 15px blue;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); }
+
+/*Pagina de Remeras*/
+body main figure h1 {
+  font-size: 2rem; }
+
+body main figure div {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-template-areas: "rem1 rem2"  "rem3 rem4" "rem5 rem6" "rem7 rem8" "rem9 rem10" "rem11 rem12" "rem13 rem14" "rem15 rem16"; }
+  body main figure div .remeras {
+    margin: 1rem; }
+  body main figure div img {
+    width: 70%;
+    height: auto;
+    overflow: hidden; }
+  body main figure div :hover {
+    --webkit-transform:scale(1.5);
+    transform: scale(1.5); }
+
+@media (max-width: 900px) {
+  /* Nav o menu, y general*/
+  body header nav ul li a {
+    font-size: 0.7rem; }
+  /* Pagina del Index*/
+  body main div section {
+    text-align: center; }
+    body main div section h2 {
+      margin: 2rem;
+      color: #ffc600;
+      background: black;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      display: inline-block; }
+    body main div section article {
+      margin: 1rem 0 2rem; }
+      body main div section article .ima-equipo {
+        height: auto;
+        width: 85%; }
+    body main div section div .titulo {
+      color: #00AAE4;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1.5rem; }
+    body main div section div p {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      text-align: center; }
+    body main div section div ul li {
+      text-align: center; }
+    body main div section div figure img {
+      width: 35%;
+      height: 35%;
+      border-radius: 60%; }
+  body main div section div div {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 30px; }
+    body main div section div div img {
+      width: 70%;
+      margin-right: 50px; }
+  body main div iframe {
+    margin: 25px 30px; }
+  /* Pagina de la copa america*/
+  body main blockquote section aside {
+    text-align: center; }
+    body main blockquote section aside p {
+      font-size: 1rem;
+      display: inline-block; }
+    body main blockquote section aside img {
+      width: 70%; }
+  body main blockquote section article {
+    margin: 2rem; }
+  body main blockquote section div {
+    text-align: center; }
+  /* Pagina de la finalisima*/
+  body main aside section {
+    text-align: center; }
+    body main aside section p {
+      font-size: 1rem;
+      display: inline-block; }
+  /* Pagina del mundial*/
+  body main article section {
+    text-align: center; }
+    body main article section h2 {
+      font-size: 1rem;
+      display: inline-block; }
+  /* Pagina de remeras*/
+  body main figure h1 {
+    font-size: 1.5rem;
+    display: inline-block; }
+  body main figure div .remeras {
+    margin: 0.5rem; }
+  body main figure div img {
+    width: 90%;
+    height: auto; } }
+
+@media (max-width: 600px) {
+  /* Nav o menu, y general*/
+  body header nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start; }
+    body header nav ul {
+      display: flex;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 4rem;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      flex-direction: column; }
+      body header nav ul li a {
+        font-size: 1.25rem; }
+      body header nav ul li a:hover, body header nav ul li a.active {
+        background: none;
+        color: white; }
+    body header nav .checkbtn {
+      display: flex; }
+    body header nav #check:checked ~ ul {
+      left: 0; }
+  /* Pagina del index*/
+  body main div section div figure {
+    flex-direction: column; }
+  body fieldset {
+    display: none; }
+  /* Pagina de la copa america*/
+  body main blockquote section aside {
+    text-align: center; }
+    body main blockquote section aside p {
+      font-size: 0.7rem; }
+  body main blockquote section img {
+    width: 70%; }
+  body main blockquote article {
+    margin: 2rem; }
+  body main blockquote div {
+    text-align: center; }
+    body main blockquote div iframe {
+      width: 75%; }
+  /* Pagina de la finalisima*/
+  body main aside section div {
+    padding: 1rem; }
+  /* Pagina del mundial*/
+  body main article section div {
+    grid-template-areas: "for1" "res1"  "for2"  "res2"  "for3"  "res3"  "for4"  "res4"  "for5"  "res5"  "for6"  "res6"  "for7"  "res7"; }
+  /* Pagina de remeras*/
+  body main figure div {
+    grid-template-areas: "rem1"  "rem2"  "rem3"  "rem4" "rem5"  "rem6" "rem7"  "rem8" "rem9"  "rem10" "rem11"  "rem12" "rem13"  "rem14" "rem15"  "rem16"; }
+    body main figure div .remeras {
+      margin: 0.5rem; }
+    body main figure div img {
+      width: 80%; }
+    body main figure div :hover {
+      --webkit-transform:scale(1.2);
+      transform: scale(1.2); } }
